@@ -1,21 +1,4 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +7,133 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  border: 2px solid white;
+  margin: 20px 10px;
+  display: flex;
+  height: 800px;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-items: flex-start;  */
+  /* height: 200px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item1 {
+  background-color: chartreuse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 150px;
+  order: 4;
+}
+
+.item2 {
+  background-color: chartreuse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 150px;
+  order: 3
+}
+
+.item3 {
+  background-color: chartreuse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 150px;
+  order: 2;
+}
+
+.item4 {
+  background-color: chartreuse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  order: 1;
+}
+
+.home {
+  background-color: orange;
+  color: white;
+  /* align-self: flex-start; */
+}
+
+.search {
+  background-color: green;
+  color: white;
+  /* align-self: center; */
+}
+
+.logout {
+  background-color: darkorange;
+  color: white;
+}
+
+
+.pip {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.item {
+  background-color: lightgray;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.first-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-face {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-face-a {
+  align-self: flex-start;
+}
+
+.second-face-b {
+  align-self: flex-end;
+}
+
+.third-face {
+  display: flex;
+  justify-content: space-between;
+}
+
+.third-face-a {
+  align-self: center;
+}
+
+.fourth-face {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourth-face-a {
+  align-self: flex-start;
+}
+
+.fourth-face-b {
+  align-self: flex-start;
 }
